@@ -26,8 +26,15 @@ const url = require('url')
 // })
 
 const server= http.createServer((req, res)=>{
-    res.end('Hellow world Raimundo')
-    console.log(res)
+    //res.end('Hellow world Raimundo')
+    console.log(req.url)
+    const pathName= req.url
+    if(pathName == "/product"){
+        res.end("Produtos")
+    }else if(pathName == "/client"){
+        res.end("Clientes")
+    }
+    
 })
 
 server.listen(8080, 'localhost',(req, res)=>{
