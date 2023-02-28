@@ -33,6 +33,15 @@ const server= http.createServer((req, res)=>{
         res.end("Produtos")
     }else if(pathName == "/client"){
         res.end("Clientes")
+    }else if(pathName== '/api'){
+        fs.readFile(`${__dirname}/text/lol.josn`,'utf-8',  (error, data)=>{
+            const JH= JSON.parse(data)
+            console.log(data)
+        })
+    }
+    else{
+        res.writenHead(404 )
+        res.end('<h1>Error Page not found</h1>')
     }
     
 })

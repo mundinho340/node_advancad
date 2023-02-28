@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Media de dois numeros simples</h1>
+    <h2>funcao com retorno e com parametro</h2>
+    <script>
+        function calculaMedia(n1,n2){
+            return (n1+n2)/2
+        }
+
+        let n1 =parseFloat(window.prompt('Digite numero: '))
+        let n2 =parseFloat(window.prompt('Digite numero: '))
+        let media= calculaMedia(n1,n2)
+        document.write(`A media de ${n1} e ${n2} = ${media}`)
+    </script>
+    
+</body>
+</html>
