@@ -35,8 +35,8 @@ const server= http.createServer((req, res)=>{
         res.end("Clientes")
     }else if(pathName== '/api'){
         fs.readFile(`${__dirname}/text/lol.josn`,'utf-8',  (error, data)=>{
-            const JH= JSON.parse(data)
-            console.log(data)
+            const js= JSON.parse(data)
+            console.log(js)
         })
     }
     else{
