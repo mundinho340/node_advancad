@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Media aritmetrica das idades</h1>
+    <script>
+        function data(){
+           let media
+           let soma=0
+           var idades=[]
+            for(let i =0; i<3; i++){
+                let idade = parseInt(window.prompt(`idade do ${i+1} aluno `))
+                soma+=idade
+                idades[i]=idade
+
+             }
+             media = soma/idades.length
+             document.write(media)
+
+        }
+        data()
+        
+    </script>
+</body>
+</html>
