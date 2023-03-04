@@ -1,11 +1,11 @@
 [
    {
       "id":0,
-      "productName":"potatos",
+      "productName":"apple",
       "image": "🍎",
       "from": "Namaacha",
       "nutrienty":"Vitamin C , Vitamin A",
-      "quantity":"4 🍎"
+      "quantity":"4 🍎",
       "price":"10.00",
       "organic" : true,
       "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat unde nemo laboriosam vitae voluptatem expedita maxime libero, quisquam eum incidunt magnam hic ut reprehenderit  ducimus quae dignissimos. Nam, perspiciatis quae!"
