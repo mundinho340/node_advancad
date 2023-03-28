@@ -116,7 +116,23 @@
 
             function regitar(){
                 let marca = document.getElementById("marca").value;
-                
+                let modelo= document.getElementById('modelo').value;
+                let matricula= document.getElementById('matricula').value
+                let ano =document.getElementById('ano').value;
+                if(marca !="" && modelo != "" && matricula !="" && ano!=""){
+                    let tabela = document.getElementById('dados')
+                    let dados="<tr><td>"+matricula+"</td><td>"+marca+"</td><td>"+modelo+"</td><td>"+ano+"</td></tr>";
+                    tabela.insertAdjacentHTML('beforeend', dados);
+                }else{
+                    alert("E necessario preecher todos os campos")
+                }
+            }
+
+            function limparCampo(){
+                document.getElementById('marca').value='';
+                document.getElementById('modelo').value=''
+                document.getElementById('matricula').value=''
+                document.getElementById('ano').value=''
             }
 
     </script>
