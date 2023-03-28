@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>Formjulario de cadastro de viatura</h3>
+    <table>
+        <tr>
+            <td>Marca</td>
+            <td><input type="text" id="modelo" onblur="validar('marca')"></td>
+        </tr>
+        <tr>
+            <td>Modelo</td>
+            <td><input type="text" id="modelo" onblur="validar('modelo')"></td>
+        </tr>
+
+        <tr>
+            <td>Matricula</td>
+            <td><input type="text" id="matricular" onblur="validar('matricula')"></td>
+        </tr>
+        <tr>
+            <td>Ano de Fabrico</td>
+            <td><input type="number" id="ano" onblur="validar('ano')" ></td>
+        </tr>
+        <tr>
+            <td><button id="gravar" onclick="regitar()">Gravar</button></td>
+            <td><button id="limpar" onclick="limparCampo()">limpar</button></td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Matricula</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano de fabrico</th>
+            </tr>
+        </thead>
+        <tbody id="dados">
+
+        </tbody>
+    </table>
+    <script>
+        // const marca = window.prompt('marca')
+        // const modelo = window.prompt('modelo')
+        // const matricula = window.prompt('matricula')
+        // const ano = window.parseInt(prompt("ano"))
+
+        // const car = {
+        //     marca: marca,
+        //     modelo: modelo,
+        //     matricula: matricula,
+        //     ano: ano
+        // }
+
+        // const carros = [car];
+        // console.log(carros);
+
+            function validar(val){
+                switch(val){
+                    case "marca":
+                        let marca =document.getElementById("marca");
+                        if(marca.value==""){
+                            alert("O campo marca deve ser preenchido")
+                            marca.focus();
+                        }
+                        else if(marca.value.lenght< 2){
+                            alert("O campo marca deve ter no minimo 2 caracteres");
+                            marca.focus();
+                        }
+                        break;
+                    case "modelo":
+                        let modelo= document.getElementById('modelo');
+                        if(modelo.value ==""){
+                            alert("O campo modelo deve ser preenchido");
+                            modelo.focus();
+                        }else if(modelo.value.lenght<2){
+                            alert("O campo modelo deve ter no minimo 2 caracteres")
+                            modelo.focus();
+                        }
+                        break;
+                        case "ano":
+                            let ano= document.getElementById("ano");
+                            if(ano.value==""){
+                                alert("O campo ano deve ter valor mair ou igual a 1980")
+                                ano.focus();
+                            }else if(parseInt(ano.value)< 1980){
+                                alert("O campo ano deve ter valor maior ou igual a 1980")
+                                ano.value=""
+                                ano.focus()
+                            }
+                            break;
+                            case "matricula":
+                                 let matricula=document.getElementById('matricula')
+                                 const reg = new RegExp('[A-Z](3)\-[0-9](3)\-[A-Z](2)');
+                                 if(matricula.value ==""){
+                                    alert("O campo matricula deve ser preenchida")
+                                    matricula.focus()
+
+                                 }else if(reg.test(matricula.value)==false){
+                                    alert("O campo matricula nao obedece a regra de construcao de matricula ex: AAA-199-MP")
+
+                                    matricula.value="";
+                                    matricula.focus()
+                                 }
+
+
+                }
+            }
+
+    </script>
+</body>
+</html>
