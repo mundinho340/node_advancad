@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,11 +23,11 @@
 
         <tr>
             <td>Matricula</td>
-            <td><input type="text" id="matricula" onblur="validar('matricula')"></td>
+            <td><input type="text" id="matricular" onblur="valdar('matricula')"></td>
         </tr>
         <tr>
             <td>Ano de Fabrico</td>
-            <td><input type="number" id="ano" onblur="validar('ano')" ></td>
+            <td><input type="number" id="ano" onblur="valdar('ano')" ></td>
         </tr>
         <tr>
             <td><button id="gravar" onclick="regitar()">Gravar</button></td>
@@ -47,7 +49,21 @@
         </tbody>
     </table>
     <script>
-       
+        // const marca = window.prompt('marca')
+        // const modelo = window.prompt('modelo')
+        // const matricula = window.prompt('matricula')
+        // const ano = window.parseInt(prompt("ano"))
+
+        // const car = {
+        //     marca: marca,
+        //     modelo: modelo,
+        //     matricula: matricula,
+        //     ano: ano
+        // }
+
+        // const carros = [car];
+        // console.log(carros);
+
             function validar(val){
                 switch(val){
                     case "marca":
@@ -89,10 +105,17 @@
                                     alert("O campo matricula deve ser preenchida")
                                     matricula.focus()
 
-                                 }else if(reg.test(matricula.value)==true){
+                                 }else if(reg.test(matricula.value)==false){
                                     alert("O campo matricula nao obedece a regra de construcao de matricula ex: AAA-199-MP")
+
                                     matricula.value="";
-                                    matricula.focus()}}}
+                                    matricula.focus()
+                                 }
+
+                            
+                }
+            }
+
             function regitar(){
                 let marca = document.getElementById("marca").value;
                 let modelo= document.getElementById('modelo').value;
