@@ -89,7 +89,7 @@
                                     alert("O campo matricula deve ser preenchida")
                                     matricula.focus()
 
-                                 }else if(reg.test(matricula.value)==true){
+                                 }else if(reg.test(matricula.value)==false){
                                     alert("O campo matricula nao obedece a regra de construcao de matricula ex: AAA-199-MP")
                                     matricula.value="";
                                     matricula.focus()}}}
