@@ -6,3 +6,6 @@ Readable streams  ->        https requests      data                        pipe
 Writable streams -> 
 Duplex Streams ->
 Tranform Streams ->*/;
+
+const server =require('http').createServer();
+const fs = require('fs');
