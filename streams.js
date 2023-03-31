@@ -9,3 +9,8 @@ Tranform Streams ->*/;
 
 const server =require('http').createServer();
 const fs = require('fs');
+
+
+server.listen(800, 'localhost', ()=>{
+    console.log('server on')
+})
