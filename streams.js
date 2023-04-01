@@ -10,7 +10,14 @@ Tranform Streams ->*/;
 const server =require('http').createServer();
 const fs = require('fs');
 
+server.on('request', (req, res)=>{
 
-server.listen(800, 'localhost', ()=>{
+    fs.readFileSync('test-file.txt', (err, data)=>{
+        if(err) console.log(err);
+        res.end(data)
+    })
+})
+
+server.listen(8080, 'localhost', ()=>{
     console.log('server on')
 })
