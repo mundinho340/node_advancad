@@ -11,11 +11,15 @@ const server =require('http').createServer();
 const fs = require('fs');
 
 server.on('request', (req, res)=>{
-
-    fs.readFileSync('test-file.txt', (err, data)=>{
+    /*Solution 1
+    fs.readFile('test-file.txt', (err, data)=>{
         if(err) console.log(err);
         res.end(data)
-    })
+    })*/
+
+    //Solution 2 : streams
+    const reable = fs.createReadStream('test-file.txt')
+
 })
 
 server.listen(8080, '127.0.0.1', ()=>{
