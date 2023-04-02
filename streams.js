@@ -18,13 +18,19 @@ server.on('request', (req, res)=>{
     })*/
 
     //Solution 2 : streams
-    const readable = fs.createReadStream('test-file.txt')
+    const readable = fs.createReadStream('testt-file.txt')
     readable.on('data', chuck => {
         res.write(chuck)
     })
 
     readable.on('end', ()=>{
         res.end(' hi guys');
+    })
+
+    readable.on('error', err =>{
+        console.log(err)
+        res.statusCode=500;
+        res.end('file not found!')
     })
 })
 
