@@ -33,7 +33,9 @@ server.on('request', (req, res)=>{
     //     res.end('file not found!')
     // })
 
-    //soluction 3 : 
+    //soluction 3 : using pipe
+    const readable = fs.createReadStream('test-file.txt');
+    readable.pipe(res);    
 })
 
 
