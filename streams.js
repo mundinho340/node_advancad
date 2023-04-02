@@ -18,9 +18,16 @@ server.on('request', (req, res)=>{
     })*/
 
     //Solution 2 : streams
-    const reable = fs.createReadStream('test-file.txt')
+    const readable = fs.createReadStream('test-file.txt')
+    readable.on('data', chuck => {
+        res.write(chuck)
+    })
 
+    readable.on('end', ()=>{
+        res.end(' hi guys');
+    })
 })
+
 
 server.listen(8080, '127.0.0.1', ()=>{
     console.log('server on')
