@@ -1,5 +1,1 @@
-var s = require('http');
-
-
-
-s.createServer('localhost');
+console.log(arguments)
