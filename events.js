@@ -25,7 +25,7 @@ const server = http.createServer();
 server.on('request', (req, res)=>{
     console.log('Request received')
     console.log(req.url)
-    res.end('Hello bro 👍');
+    res.end('Hello bro 👍 ');
 });
 
 server.on('request', (req, res)=>{
