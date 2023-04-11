@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">numerador</label>
+        <input type="number" placeholder="numerador" id="n1">
+        <br>
+        <label for="">Denominador</label>
+        <input type="number" placeholder="denominador" id="n2">
+         <input type="button" value="calcular" onclick="resolver()">
+        <input type="button" value="limpar" onclick="limapar">
+        <div id="res"></div>
+    </form>
+    <script>
+        function limapar(){
+            let s= document.getElementById('n1');
+            let t =document.getElementById('n2');
+        }
+        
+        
+        function DivisaoPorZero(message){
+            this.name ="Division By Zero Exception";
+            this.message = message;
+        }
+        function resolver(){
+            try{
+            let n1= parseInt(document.getElementById('n1').value);
+            let n2= parseInt(document.getElementById('n2').value);
+            let result = document.getElementById('res');
+            console.log(n1)
+            if(n2 ===0){
+                alert("Não eh possivel realizar uma divisão por zero☹️");
+                throw new DivisaoPorZero("Não eh possivel realizar uma divisão por zero☹️");
+            }else{
+                divi=n1/n2;
+            }
+            console.log(divi);
+            result.innerHTML=`a divisao de ${n1} / ${n2} =${n1/n2}`;
+            alert("Calculo efectuado com sucesso");
+        }catch(erro){
+            console.log(erro);
+        }
+        }
+    </script>
+</body>
+</html>

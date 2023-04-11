@@ -11,7 +11,7 @@
     <br>
     <input type="button" id="botao" value="mudar" onclick="mudar()">
     <script>
-        function mudar(){
+        function mudar(){   
             let botao =document.getElementById('botao');
 
             let cor = gerarHexadecimal(6);
@@ -25,7 +25,6 @@
 
             for(let n=0; n<size; n++){
                 result+= hexReferencia[Math.floor(Math.random()*16)]
-
             }
             return result;
         }
