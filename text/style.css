@@ -1,0 +1,55 @@
+//Raimundo
+
+//tarefa 6 Resultado de aprendizagem 3
+#tarefa{
+     background: repeat-x url("./Sem\ título.png") ;
+     width:400px;
+     height:200px;
+     
+     border: solid black 1px;
+
+}
+
+//Tarefa 7 Resultado de aprendizagem 3
+ol{
+    list-style-type: lower-roman;
+}
+
+//Tarefa 8 Resultado de aprendizagem 3
+  img{
+    float: left;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 0px 0px 0;
+    max-width: 186px;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+    width: 700px;
+}
+
+//tarefa 9 Resultado de aprendizagem 3
+//Raimundo
+  #contacte-nos{
+            position: relative;
+            text-align: right ;
+            
+            margin: bottom -100%;;
+            
+
+        }
+
+        #historia{
+           margin: 0px;
+        }
+        section{
+            margin-top: 190px;
+        }
+
+        footer{
+
+            position: absolute;
+            margin-top: 30px;
+        }
+//Raimundo
