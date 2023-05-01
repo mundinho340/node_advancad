@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #box{
+            border: 1px solid #a74a0d;
+            height: 250px;
+            left: 10px;
+            position: relative;
+            top: 20px;
+            overflow: hidden;
+            width: 720px;
+        }
+
+        #earth{
+            background: rosybrown;
+            border-top:20px solid #090;
+            bottom: 0;
+            height: 50px;
+            position: absolute;
+            width: 720px;
+        }
+
+        #ball1, #ball2{
+            border-radius:50px;
+            height: 100px;
+            position: absolute;
+            top: 80px;
+            width: 100px;
+        }
+
+        #ball1{
+            background-color: royalblue;
+            left: 0px;
+        }
+
+        #ball2{
+            background-color: DimGray;
+            left: 450px;
+        }
+
+        
+    </style>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#ball1").animate({
+                "left": "400px"
+            }, 400, null , function(){
+                $("ball2").animate({
+                    "left": "600px"
+                }, 400);
+                $("#ball1").animate({
+                    "left": "400px"
+                }, 400);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h2>Animação com JQuery usando funcão animate</h2>
+        <br>
+    </div>
+
+    <div id="box">
+        <div id="ball1">ball1</div>
+        <div id="ball2">ball2</div>
+        <div id="earth">earth</div>
+    </div>
+</body>
+</html>
