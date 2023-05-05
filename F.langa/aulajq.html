@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Fade</title>
+</head>
+<body>
+    <div id="principal">
+        <button id="efeito-1">Efeito Fade In</button>
+        <button id="efeito-2">Efeito Fade In Devagar</button>
+        <button id="efeito-3">Efeito Fade In com tempo</button>
+        <br><br><br>
+    </div>
+    <div id="campo-2" style="display:none; width:100px; height:30px; background: green;">
+    </div>
+    <div id="campo-3" style="display: none; width: 100px; height: 30px; background-color: yellow;">
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        (function(){
+            $("#feito-1").click(function(){
+                $("#campo-1").fadeIn();
+            });
+            $("#efeito-2").click(function(){
+                $("#campo-2").fadeIn("slow");
+            });
+            $("#efeito-3").click(function(){
+                $("#campo-3").fadeIn(5000);
+            });
+        })();
+    </script>
+</body>
+</html>
