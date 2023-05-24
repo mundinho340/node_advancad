@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../UBJS/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            //change background and color font
+            var estado = false;
+            $("#imagem").click(function(){
+                if(estado == estado){
+                    estado= !estado
+                }
+                console.log(estado)
+                if(estado == true){
+                    $("body").css({"background":"#132238", "color":"white"})
+                    $("span").css({"color":"white"})
+                }else{
+                     $("body").css({"background":"white", "color":"black"})
+                    $("span").css({"color":"black"})
+                }
+                
+                // $(this).css({"background":"red"})
+            })
+            //setting
+            $("#setting").click(function(){
+                
+            })
+            //image
+            $("#img").hide()
+            $("#img1").hide()
+            $("#img2").hide()
+            $("#img3").hide()
+            $("#img4").hide()
+            //foco do mouse
+            $(".text").mouseenter(function(){
+                $("#img").show();
+            })
+             $(".text1").mouseenter(function(){
+                $("#img1").show();
+            })
+             $(".text2").mouseenter(function(){
+                $("#img2").show();
+            })
+             $(".text3").mouseenter(function(){
+                $("#img3").show();
+            })
+             $(".text4").mouseenter(function(){
+                $("#img4").show();
+            })
+            //tirando foco mouse
+            $(".text").mouseleave(function(){
+                $("#img").hide();
+            })
+             $(".text1").mouseleave(function(){
+                $("#img1").hide();
+            })
+             $(".text2").mouseleave(function(){
+                $("#img2").hide();
+            })
+             $(".text3").mouseleave(function(){
+                $("#img3").hide();
+            })
+             $(".text4").mouseleave(function(){
+                $("#img4").hide();
+            })
+            $("#compre").click(function(){
+                alert("Parabens voce comprou o clothes")
+            })
+        })
+    </script>
+</head>
+<body id="corpo">
+
+    <section>
+        <header>
+            <div class="circle"></div>
+            <div class="circles"></div>
+            <a href="#" class="logo">Shop<span>ifty</span></a>
+            <ul>
+                 <li class="text" >
+                    <a href="">  
+                        <span>Inicio</span>
+                        <br>
+                         <img src="imagem/house-door.svg" alt="" width="40px" height="40px" id="img">
+                    </a>
+
+                </li>
+                <li class="text1"><a href="serv.html">
+                    <span class="">Nossos Serviços</span>
+                        <br>
+                        <img src="imagem/house-gear.svg" alt="" width="40px" height="40px" id="img1">
+                </a>
+                </li>
+                <li class="text2"><a href="sobre.html" >
+                    <span>Sobre nos</span>
+                    <br>
+                        <img src="imagem/people-fill.svg" alt="" width="40px" height="40px" id="img2">
+                </a>
+                </li>
+                <li class="text3"><a href="parce.html">
+                    <span>Parceiros</span>
+                    <br>
+                        <img src="imagem/person-rolodex.svg" alt="" width="40px" height="40px" id="img3" >
+                </a>
+                </li>
+                <li class="text4"><a href="contact.html">
+                    <span>Contacte nos</span>
+                    <br>
+                        <img src="imagem/telephone-outbound.svg" alt="" width="40px" height="40px" id="img4">
+                </a>
+                </li>
+                <li>
+                    <img src="image/lightbulb.svg" alt="" id="imagem">
+                </li>
+                <li>
+                    <img src="image/gear.svg" alt="" id="setting">
+                </li>
+            </ul>
+            <p>Sing up</p>
+        </header>
+
+        <div class="texts">
+            <h1>Online <span>Shop</span></h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type 
+                specimen book. It has survived not only five centuries, but also the leap into 
+                electronic typesetting, remaining essentially unchanged. It was popularised in 
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including 
+                versions of Lorem Ipsum.
+            </p>
+        </div>
+
+        <div class="background_image">
+            <img src="image/bg1.png">
+        </div>
+
+        <div class="btn">
+            <p class="read">Ver mais</p>
+            <p>Entrar agora</p>
+        </div>
+    </section>
+
+
+
+
+    <!--About Page-->
+
+    <div class="about">
+        <div class="box">
+            <div class="card">
+                <img src="image/Computer.png">
+            </div>
+            <div class="card">
+                <img src="image/gift.png">
+            </div>
+            <div class="card">
+                <img src="image/t-shirt.png">
+            </div>
+            <div class="card">
+                <img src="image/food.png">
+            </div>
+            <div class="card">
+                <img src="image/mobile.png">
+            </div>
+        </div>
+        <hr>
+
+        <div class="Clothes">
+            <h1>Products</h1>
+            <p>----Clothes----</p>
+            <div class="clothes_box">
+                <div class="clothes_card">
+                    <img src="image/jerci1.png">
+                    <h1>Clothes</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old.
+                    </p>
+                    <a href="#" class="btn" id="compre" >Compre</a>
+                </div>
+                <div class="clothes_card">
+                    <img src="image/jerci2.png">
+                    <h1>Clothes</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old.
+                    </p>
+                    <a href="#" class="btn" id="compre">Compre</a>
+                </div>
+                <div class="clothes_card">
+                    <img src="image/jerci3.png">
+                    <h1>Clothes</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old.
+                    </p>
+                    <a href="#" class="btn" id="compre">Compre</a>
+                </div>
+                <div class="clothes_card">
+                    <img src="image/jerci4.png">
+                    <h1>Clothes</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old.
+                    </p>
+                    <a href="#" class="btn" id="compre">Compre</a>
+                </div>
+            </div>
+        </div>
+        <div class="Food">
+            <p>----Food----</p>
+            <div class="food_box">
+                <div class="food_card">
+                    <img src="image/Burger.png">
+                    <h1>Food</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old.
+                    </p>
+                    <a href="#" class="btn">Compre</a>
+                </div>
+
+                <div class="food_card">
+                    <img src="image/Hotdog.png">
+                    <h1>Food</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old.
+                    </p>
+                    <a href="#" class="btn">Compre</a>
+                </div>
+
+                <div class="food_card">
+                    <img src="image/pizza.png">
+                    <h1>Food</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old.
+                    </p>
+                    <a href="#" class="btn"> Compre</a>
+                </div>
+
+                <div class="food_card">
+                    <img src="image/sandvich.png">
+                    <h1>Food</h1>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old.
+                    </p>
+                    <a href="#" class="btn">Compre</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--fotter-->
+
+    <footer class="footer">
+        <div class="main">
+            <div class="row">
+                <div class="footer_col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shiping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_col">
+                    <h4>Online</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_col">
+                    <h4>Follower us</h4>
+                    <div class="social">
+                        <a href="#"><img src="image/facebook.png"></a>
+                        <a href="#"><img src="image/Googlell.png"></a>
+                        <a href="#"><img src="image/twitter.png"></a>
+                        <a href="#"><img src="image/instagram.png"></a>
+                    </div>               
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
