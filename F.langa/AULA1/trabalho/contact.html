@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: rgba(122, 122, 240, 0.26);
+        }
+        li{
+            list-style: none;
+           
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        ul{width: 500px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header{
+            
+            background-color: #534E4A;
+            color: white;
+            height: 60px;
+            font-size: 1em;
+        }
+        footer{
+            position: relative;
+            margin: bottom;
+            color: white;
+            background-color: #534E4A;
+        }
+    </style>
+    <script src="../UBJS/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#img").hide()
+            $("#img1").hide()
+            $("#img2").hide()
+            $("#img3").hide()
+            $("#img4").hide()
+            //foco do mouse
+            $(".text").mouseenter(function(){
+                $("#img").show();
+            })
+             $(".text1").mouseenter(function(){
+                $("#img1").show();
+            })
+             $(".text2").mouseenter(function(){
+                $("#img2").show();
+            })
+             $(".text3").mouseenter(function(){
+                $("#img3").show();
+            })
+             $(".text4").mouseenter(function(){
+                $("#img4").show();
+            })
+            //tirando foco mouse
+            $(".text").mouseleave(function(){
+                $("#img").hide();
+            })
+             $(".text1").mouseleave(function(){
+                $("#img1").hide();
+            })
+             $(".text2").mouseleave(function(){
+                $("#img2").hide();
+            })
+             $(".text3").mouseleave(function(){
+                $("#img3").hide();
+            })
+             $(".text4").mouseleave(function(){
+                $("#img4").hide();
+            })
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="text" >
+                    <a href="">  
+                        <span>Inicio</span>
+                        <br>
+                         <img src="image/house-door.svg" alt="" width="40px" height="40px" id="img">
+                    </a>
+
+                </li>
+                <li class="text1"><a href="serv.html">
+                    <span class="">Nossos Serviços</span>
+                        <br>
+                        <img src="image/house-gear.svg" alt="" width="40px" height="40px" id="img1">
+                </a>
+                </li>
+                <li class="text2"><a href="sobre.html" >
+                    <span>Sobre nos</span>
+                    <br>
+                        <img src="image/people-fill.svg" alt="" width="40px" height="40px" id="img2">
+                </a>
+                </li>
+                <li class="text3"><a href="parce.html">
+                    <span>Parceiros</span>
+                    <br>
+                        <img src="image/person-rolodex.svg" alt="" width="40px" height="40px" id="img3" >
+                </a>
+                </li>
+                <li class="text4"><a href="contact.html">
+                    <span>Contacte nos</span>
+                    <br>
+                        <img src="image/telephone-outbound.svg" alt="" width="40px" height="40px" id="img4">
+                </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Ola essa é a nossa pagina</h1>
+             <h2>Somos especializados em redes de computadores </h2>
+        </section>
+        <section>
+            <article>
+                <img src="" alt=""  width="800" height="400">
+            </article>
+        </section>
+        <footer>
+            <span>redes sociais</span>
+            <span>Parceiros</span>
+
+        </footer>
+    </main>
+</body>
+</html>
