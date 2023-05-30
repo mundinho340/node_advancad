@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaçao CSS e jquery</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+
+        #meuParaiso{
+            border: 1px solid green;
+            width: 600px;
+        }
+
+    </style>
+
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function(){
+            $("#meuParaiso").hide(3000, function(){
+                $("#meuTexto").hide(2000);
+            });
+            $("#meuParaiso").show(3000, function(){
+                $("#meuTexto").show(2000);
+            })
+        })
+    </script>
+
+
+<div>
+    <img src="imagens/paraiso1.jpg" alt="" id="meuParaiso">
+    <h2 id="meuTexto">
+        Esta animação é feito pela fun
+    </h2>
+
+</div>
+</body>
+</html>
