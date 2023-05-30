@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: lightblue;
+        }
+
+        #display{
+            width: 720px;
+            height: 500px;
+            background-color: aliceblue;
+            border: black;
+        }
+    </style>
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script  type="text/javascript">
+        $(document).ready(function(){
+            $(document).ready(function(){
+                $("#btnHideShow").click(function(){
+                    $("#display").toggle();
+                });
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div id="display">
+        <canvas id="myChart" style="width: 100%; max-width:600px;"></canvas>
+        <script>
+            var xValues =['Maputo Cidade', 'Maputo Provincia', "Gaza", "Inhambane"];
+            var yValues = [9875, 8352, 5850, 6925];
+            var barColors =["#b91d47", "#00aba9", "#e8c3b9"];
+            new Chart("myChart", {
+                type: "pie",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options:{
+                    title:{
+                        display: true,
+                        text: "Representação do emprego na Zona Sul de Moçambique"
+                    }
+                }
+            });
+        </script>
+    </div>
+    <input type="button" value="HideShow" name="btnHideShow" id="btnHideShow" style="width
+    :100px; height: 30px;"/>
+</body>
+</html>
