@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $("#toggle").click(function(){
+            $(".target").slideToggle("slow", function(){
+                $(".log").text("Deslize slideTogle foi concluido com sucesso");
+            });
+        });
+    });
+
+    </script>
+    <style>
+        h2{
+            background-color: #bca;
+            width: 600px;
+            border: 5px solid green;
+            padding: 10px;
+        }
+
+        button{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Executa as funcoes de dezlize com click de boto~es abaixo
+        
+    </h2>
+    <button id="toggle">Deslize com slideToggle</button>
+    <div class="target">
+        <img src="imagens/paraiso4.jpg" alt="JQuery">
+
+    </div>
+    <div class="log"></div>
+</body>
+</html>
