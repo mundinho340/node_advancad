@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>efeitos jquery</title>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" lang="javascript">
+        $(document).ready(function(){
+            $("#in").click(function(){
+                $(".target").fadeIn(3500, function(){
+                    $(".log").text("Trasação com função FADEIN concluido")
+                });
+            });
+            $("#out").click(function(){
+                $(".target").fadeOut("slow", function(){
+                    $(".log").text("Transação com função FadeOut concluido");
+                });
+            });
+        })
+    </script>
+    <style>
+        h2{
+            background-color: #bca;
+            width: 600px;
+            border: 5px solid green;
+            padding: 10px;
+        }
+
+        button{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Clique nos Botoes e execute efeitos fade em jquery</h2>
+    <button id="out">Execute funcao fadeOut</button>
+    <button id="in">Execute funcao fade in</button>
+    <div class="target">
+        <img src="imagens/paraiso2.jpeg" alt="JQuery">
+        
+    </div>
+    <div class="log"></div>
+</body>
+</html>
