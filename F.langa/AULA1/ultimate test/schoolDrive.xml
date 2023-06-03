@@ -1,0 +1,51 @@
+xml
+    <escola>
+        <Categoria>
+            <Pesados>
+            <Aluno>
+                    <Username></Username>
+                    <Email></Email>
+                    <NomeCompleto></NomeCompleto>
+                    <Password></Password>
+
+                </Aluno>
+            </Pesados>
+            <Ligeiros>
+                <Aluno>
+                    <Username></Username>
+                    <Email></Email>
+                    <NomeCompleto></NomeCompleto>
+                    <Password></Password>
+
+                </Aluno>
+                <Aluno>
+                    <Username></Username>
+                    <Email></Email>
+                    <NomeCompleto></NomeCompleto>
+                    <Password></Password>
+
+                </Aluno>
+                <Aluno>
+                    <Username></Username>
+                    <Email></Email>
+                    <NomeCompleto></NomeCompleto>
+                    <Password></Password>
+
+                </Aluno>
+                <Aluno>
+                    <Username></Username>
+                    <Email></Email>
+                    <NomeCompleto></NomeCompleto>
+                    <Password></Password>
+
+                </Aluno>
+            </Ligeiros>
+            <ServicosPublicos>
+            
+            </ServicosPublicos>
+            <Motociclos>
+            </Motociclos>
+
+        </Categoria>
+
+    </escola>
