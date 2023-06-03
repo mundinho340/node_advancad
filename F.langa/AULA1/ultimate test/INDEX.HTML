@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Estudante</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <fieldset id="menu">
+  <h2>Formulário de Estudante</h2>
+  
+  <form id="studentForm">
+    <label for="codigo">Código:</label>
+    <input type="text" id="codigo" required><br>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required><br>
+
+    <label for="estadoCivil">Estado Civil:</label>
+    <select id="estadoCivil" required>
+      <option value="">Selecione...</option>
+      <option value="Solteiro">Solteiro</option>
+      <option value="Casado">Casado</option>
+      <option value="Divorciado">Divorciado</option>
+      <option value="Viúvo">Viúvo</option>
+    </select><br>
+
+    <label for="genero">Gênero:</label>
+    <input type="radio" id="generoMasculino" name="genero" value="Masculino" required>
+    <label for="generoMasculino">Masculino</label>
+    <input type="radio" id="generoFeminino" name="genero" value="Feminino" required>
+    <label for="generoFeminino">Feminino</label><br>
+
+    <label for="teste1">Teste 1:</label>
+    <input type="number" id="teste1" required><br>
+
+    <label for="teste2">Teste 2:</label>
+    <input type="number" id="teste2" required><br>
+
+    <button type="submit">Adicionar</button>
+    <button type="button" id="cancelButton">Cancelar</button>
+  </form>
+</fieldset>
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Estado Civil</th>
+        <th>Teste 1</th>
+        <th>Teste 2</th>
+        <th>Gênero</th>
+        <th>Média</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script src="../jquery.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
