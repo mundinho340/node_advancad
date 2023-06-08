@@ -1,0 +1,112 @@
+*{
+    position: relative;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form select,
+  form input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #e10404;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 400px;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  h2{
+    
+    margin-right: 30%s;
+    background-color: #447f5d;
+  }
+  
+  table th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  #menu {
+    border: 1px solid #7b9b79;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  #menu legend {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  form input[type="submit"],
+form input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #306c49;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border: 2px solid #000000;
+  margin-top: 10px;
+}
+#cancel{
+    position: absolute;
+    background-color: #b92323;
+    height: 26px;
+    width: 200px;
+    left: 450px;
+    margin-bottom: 220px;
+    bottom: -215px;
+    right: 250px;
+
+}
+#add{
+    position: absolute;
+    background-color: #b92323;
+    height: 26px;
+    width: 200px;
+    left:250px;
+    margin-bottom: 220px;
+    bottom: -215px;
+    right: 250px;
+
+}
