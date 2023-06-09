@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Change</title>
+</head>
+<body>
+    <div id="principal">
+        <select name="" id="feito-1">
+            <option value=""></option>
+            <option value="Mocambicano">Mocambicano</option>
+            <option value="Sul Africano">Sul Africano</option>
+            <option value="Nigeriano">Nigeriano</option>
+        </select>
+
+        <br><br><br>
+    </div>
+    <p id="campo-1">
+        Eu sou
+    </p>
+    <style>
+        
+    </style>
+    <script src="jquery.js">
+        (function(){
+            $("#feito-1").change(function(){
+                $("#campo-1").html("Eu sou"+$("#feito-1").val())
+            })
+        })()
+    </script>
+</body>
+</html>
